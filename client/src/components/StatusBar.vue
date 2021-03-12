@@ -8,7 +8,7 @@
     <!-- Nodes -->
     <div class="item nodes">
       <i class="bi bi-hdd-network"></i>
-      <span>DHT nodes</span> {{ sessionStats('dht.dht_nodes') }}
+      <span>DHT</span> {{ sessionStats('dht.dht_nodes') }} node(s)
     </div>
     <!-- Download -->
     <div class="item download">
