@@ -1,23 +1,14 @@
 
 // Torrent File
 .torrent-file {
+  position  : absolute;
+  left      : 0;
+  top       : 0;
+  right     : 0;
+  bottom    : 0;
   background: var(--backdrop-bg);
-  padding   : 1rem;
+  padding   : 1rem 0.75rem;
   overflow-y: auto;
-  position: relative;
-  .close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: var(--separator-color);
-    padding: 0.25rem;
-    border-radius: 999rem;
-    transform: translateY(-10%);
-    .bi {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-  }
   h2 {
     font-size: 1.5rem;
     @media (min-width: $breakpoint-sm) {  
@@ -31,29 +22,37 @@
     }
   }
   .status-bar {
-    width        : calc(100% + 2rem);
-    margin-left  : -1rem;
+    width        : calc(100% + 1.5rem);
+    margin-left  : -0.75rem;
     margin-bottom: 1rem;
     border-top   : var(--separator);
     .item {
       flex           : 0 0 auto;
       border-bottom  : 0;
       justify-content: flex-start;
-      padding        : 0.75rem 1rem;
+      padding        : 0.5rem 0.75rem;
       min-width      : 100px;
     }
   }
-  .row-overview {
+  .row {
     margin   : 0 -1rem 2rem;
     flex-wrap: wrap;
     .col {
-      border-bottom: var(--separator);
       display      : flex;
       flex         : 1 1 100%;
       max-width    : 100%;
+      border-bottom: var(--separator);
       @media (min-width: $breakpoint-md) {
         flex     : 1 1 50%;
         max-width: 50%;
+      }
+      @media (min-width: $breakpoint-lg) {
+        flex     : 1 1 33.333%;
+        max-width: 33.333%;
+      }
+      @media (min-width: $breakpoint-xl) {
+        flex     : 1 1 25%;
+        max-width: 25%;
       }
       .label, 
       .value {
@@ -83,38 +82,10 @@
       }
     }
   }
-  .progress-overview {
+  .progress {
     margin: 1rem 0 2rem;
-    height: 30px;
-    border-radius: 0.25rem;
-    &::-webkit-progress-value {
-      border-radius: 0.25rem;
-    }
   }
   .tabs {
-    margin: 0 -1rem 1rem;
-  }
-}
-
-main {
-  .torrent-file.full {
-    .row-overview {
-      .col {
-        flex         : 1 1 100%;
-        max-width    : 100%;
-        @media (min-width: $breakpoint-md) {
-          flex     : 1 1 50%;
-          max-width: 50%;
-        }
-        @media (min-width: $breakpoint-lg) {
-          flex     : 1 1 33.333%;
-          max-width: 33.333%;
-        }
-        @media (min-width: $breakpoint-xl) {
-          flex     : 1 1 25%;
-          max-width: 25%;
-        }
-      }
-    }
+    margin: 0 -0.75rem 1rem;
   }
 }

@@ -2,9 +2,6 @@
   <div class="backdrop torrent-file">
     <!-- File: Name -->
     <h2>CentOS-7-x86_64-DVD-2020</h2>
-    <button class="close">
-      <i class="bi bi-x"></i>
-    </button>
     <!-- File: Status-bar -->
     <div class="status-bar">        
       <div class="item tooltip">
@@ -38,7 +35,7 @@
     </div>
     <!-- File: Overview -->
     <h3>Overview</h3>
-    <div class="row row-overview">
+    <div class="row">
       <div class="col">
         <div class="label">Name</div>
         <div class="value">CentOS-7-x86_64-DVD-2020</div>
@@ -90,7 +87,9 @@
     </div>  
     <!-- File: Piece progress -->
     <h3>Piece progress</h3>
-    <progress class="progress-overview" max="100" value="50" />
+    <div class="progress">
+      <div class="bar" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
     <!-- Tabs -->
     <div class="tabs">
       <div class="menu">
@@ -111,7 +110,7 @@
                   3.59 GB
                 </div>
                 <div class="progress">
-                  <progress max="100" value="75" />
+                  <div class="bar" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="priority">
                   Normal
@@ -128,7 +127,7 @@
                   3.59 GB
                 </div>
                 <div class="progress">
-                  <progress max="100" value="35" />
+                  <div class="bar" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="priority">
                   Normal

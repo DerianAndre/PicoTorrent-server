@@ -1,9 +1,9 @@
 <template>
-  <main class="home sidebar-open">
+  <main class="home">
     <StatusBar />
     <TorrentList />
     <!-- WIP -->
-    <TorrentFile />
+    <TorrentFile class="hide" />
     <!-- /WIP -->
   </main>
 </template>

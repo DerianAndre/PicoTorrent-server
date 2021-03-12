@@ -3,9 +3,8 @@
 .status-bar {
   display    : flex;
   align-items: stretch;
-  flex       : 1 0 100%;
-  flex-wrap  : wrap;
   width      : 100%;
+  flex-wrap  : wrap;
   @if $ui-enable-backdrop {
     border-bottom: var(--separator);
   } @else {
@@ -16,8 +15,8 @@
     flex           : 0 0 auto;
     align-items    : center;
     justify-content: center;
-    padding        : 0.75rem 1rem;
-    font-size      : 0.75rem;
+    padding        : .60rem 1rem;
+    font-size      : .75rem;
     span {
       font-weight : 500;
       margin-right: .35rem;
